@@ -1,16 +1,17 @@
-window.addEventListener('load',init);
+window.addEventListener('load',init,);
 //levels 
 const levels={
     easy:5,
     medium:3,
     hard:2
 }
-const currentLevel=levels.medium;
+let currentLevel=levels.medium;
 
 //globallzz maan
 let time=currentLevel;
 let score=0;
 let isPlaying;
+
 
 //dom elem
 const wordInput = document.querySelector('#word-input');
@@ -19,35 +20,35 @@ const scoreDisplay = document.querySelector('#score');
 const timeDisplay = document.querySelector('#time');
 const message = document.querySelector('#message');
 const seconds = document.querySelector('#seconds');
-
+const ezBtn= document.querySelector('#ez')
 const words = [
-    'bar',
-    'drink',
-    'strike',
-    'mention',
+    'mistake',
+    'work',
+    'station',
+    'backstage',
+    'reckless',
     'blade',
-    'running',
-    'smarter',
-    'living',
-    'sense',
-    'plugwalk',
-    'integration',
-    'make',
-    'feeling',
-    'bread',
-    'pistol',
-    'mice',
-    'rabbit',
-    'nitrogen',
-    'subliminal',
-    'thinking',
-    'master',
-    'logic',
-    'rolling',
-    'bloated',
-    'fear',
-    'stunning',
-    'brave',
+    'starter',
+    'monitoring',
+    'simply',
+    'widndows',
+    'disintegration',
+    'maker',
+    'fleetwood',
+    'mac',
+    'fejzo',
+    'rabbits',
+    'voyage',
+    'naming',
+    'sting',
+    'wariorz',
+    'barcelona',
+    'atatekumpo',
+    'menager',
+    'buletproof',
+    'fading',
+    'time',
+    'barking',
   ];
 
   //init
@@ -62,6 +63,22 @@ const words = [
      //checkgame
      setInterval(checkStatus,50);
   }
+  //levelzzz
+  function setCurrentLevel(level) {
+    currentLevel = level;
+    seconds.innerHTML = currentLevel;
+  }
+  document.querySelector('#ez').addEventListener('click', function () {
+    setCurrentLevel(levels.easy)
+    
+  }) 
+  document.querySelector('#med').addEventListener('click', function() {
+    setCurrentLevel(levels.medium) 
+  })
+  
+  document.querySelector('#hard').addEventListener('click', function() {
+    setCurrentLevel(levels.hard)
+  })
 
   //random word
   function showWord(words){
