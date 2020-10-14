@@ -43,7 +43,7 @@ const words = [
     'sting',
     'wariorz',
     'barcelona',
-    'atatekumpo',
+    'antetokounmpo',
     'menager',
     'buletproof',
     'fading',
