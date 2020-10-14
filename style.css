@@ -1,0 +1,33 @@
+
+header{
+    height: 100px;
+}
+#logo{
+    height: 240px;
+    width: 400px;
+    position: relative;
+    right: 43%;
+    padding: 2px;
+    bottom: 45px;         
+}
+button{
+  background-color: #f0ad4e;
+border:none;
+color: white;
+width: 100px;
+text-align: center;
+text-decoration: none;
+font-size: 16px;
+margin: 8px 2px;
+cursor: pointer;
+border-radius: 19px;
+}
+button:focus{
+  background-color: rgb(0, 0, 0);
+  outline:none;
+}
+.footer {
+position: relative;
+color: black;
+text-align: center;
+}      
