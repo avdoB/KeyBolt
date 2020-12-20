@@ -88,7 +88,7 @@ const words = [
   } 
 //time
   function countdown(){
-      if(time> 0){
+      if(time > 0){
 time--;
       } else if( time===0){
           isPlaying=false;
